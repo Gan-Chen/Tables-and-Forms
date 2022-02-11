@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tables and Forms</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tables and Forms</h1>
+    </header>
+    <section>
+      <h2>Tables</h2>
+      <table>
+        <caption>Top 3 favorite things</caption>
+        <tr>
+        <th colspan="3">Favorites</th>
+        </tr>
+        <tr>
+          <th>Foods</th>
+          <th>Activites</th>
+          <th>Sport</th>
+        </tr>
+        <tr>
+          <td>Steak</td>
+          <td>Running</td>
+          <td>Track</td>
+        </tr>
+        <tr>
+          <td>Chicken</td>
+          <td>Coding</td>
+          <td>VolleyBall</td>
+        </tr>
+        <tr>
+          <td>Burger</td>
+          <td>Eating</td>
+          <td>BasketBall</td>
+        </tr>
+         <tr>
+         <td rowspan="2">Combined 2 rows col 1</td>
+         <td >Combined 2 rows col 2</td>
+         <td >Combined 2 rows col 3</td>
+       </tr>
+       <tr>
+         <td >Combined 2 rows col 2</td>
+         <td >Combined 2 rows col 3</td>
+       </tr>
+
+      </table>
+    </section>
+
+    <section>
+      <h2>Forms</h2>
+    
+      <form>
+        <label for="Name">Name</label>
+<input placeholder="Please enter your name" type="text" id="Name" required>
+        
+        <br>
+
+        <label for="Height">Height</label>
+<input type="text" id="Height" required>
+
+<br>
+
+<label for="password">Password</label>
+<input placeholder="Please enter your password" type="password" id="password" required>
+
+<br>
+<fieldset>
+  <legend> Meals and laugages</legend>
+<p>Pick your 2 favorite meals</p>
+<input  type="checkbox" id="Breakfast" name="meal" value = "Breakfast" >
+<label for =" Breakfast">Breakfast</label>
+
+<br>
+
+<input  type="checkbox" id="Lunch" name="meal" value = "Lunch" >
+<label for =" Lunch">Lunch</label>
+
+<br>
+
+<input  type="checkbox" id="Dinner" name="meal" value = "Dinner" >
+<label for =" Dinner">Dinner</label>
+
+<br>
+<p>Pick your favorite language:</p>
+<input  type="radio" id="HTML" name="langlist" value = "HTML" >
+<label for =" HTML">HTML</label>
+
+<br>
+
+<input  type="radio" id="JS" name="langlist" value = "JS" >
+<label for ="JS">JavaScript</label>
+
+<br>
+
+<input  type="radio" id="CSS" name="langlist" value = "CSS" >
+<label for =" CSS">CSS</label>
+</fieldset>
+<br>
+<label for="email">Email</label>
+<input placeholder="Please enter your email" type="email" id="email" required>
+
+<br>
+<label for="month">Month picker</label>
+<input type="month" id="month" required>
+
+<br>
+<label for="range">Range slider</label>
+<input type="range" id="range" min="0%" max="100%" value="0" required/>
+
+<br>
+<label for="meter">meter</label>
+<meter type="meter" id="meter" min="0" max="100" value="50"></meter>
+
+<br>
+<label for="rating">Rating</label>
+<input type="number" id="rating" min="1" max="5" value="1"/>
+
+<br>
+
+
+  <label for="super">SuperPowers</label>
+  <select id= "super" name= "super">
+    <option value ="blank">-- Please choose from below--</option>
+    <option value = "mind">Mindreading</option>
+    <option value = "Invisbility">Invisbility</option>
+    <option value = "Time">Time Controll</option>
+    <option value = "Learner">Learn everything</option>
+    <option value = "fly">Flight</option>
+
+
+</select >
+
+<br><br>
+<input type="submit" value="submit">
+        </form>
+      </section>
+
+  </body>
+</html>
